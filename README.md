@@ -18,6 +18,7 @@
     *   **Rookie**: Slower pitches, larger zone.
     *   **Pro**: Standard zone.
     *   **All-Star**: Unlocks automatically after a 5-streak. Tighter margins & faster gameplay.
+*   **Rule Packs 📜**: Switch between different rule sets (e.g., Baseball, Softball, Kickball) to keep the game fresh and versatile.
 *   **Coach Mode 💡**: Intelligent hints appear when a player struggles (2 consecutive errors), offering visual corrections.
 *   **Heatmap Analytics 📊**: Post-game summary shows a spatial grid of where the player missed calls, aimed at self-correction.
 *   **Accessibility First**: High-contrast support, large touch targets (48px+), and color-blind friendly design (Shape + Color coding).
@@ -33,8 +34,8 @@
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/your-org/nextplay-ui.git
-    cd nextplay-ui
+    git clone https://github.com/SohamBasanwar/Strike_or_Ball_UI.git
+    cd Strike_or_Ball_UI
     ```
 
 2.  **Install dependencies**
@@ -59,11 +60,15 @@ src/
 ├── components/      # UI Building blocks
 │   ├── Button.tsx       # Tactile game buttons
 │   ├── StrikeZone.tsx   # Visual zone + Pitch rendering
+│   ├── ScoreBoard.tsx   # Live score and stats display
+│   ├── PackSelector.tsx # Rule pack selection carousel
+│   ├── FeedbackModal.tsx# Visual feedback for calls
 │   ├── Heatmap.tsx      # Analytics grid
 │   └── CoachHint.tsx    # Intelligent tooltip
 ├── screens/         # Full-page views
 │   ├── OnboardingScreen # Difficulty & Pack select
 │   ├── GameScreen       # Main gameplay loop
+│   ├── ResultScreen.tsx # Instant call result feedback
 │   └── SummaryScreen    # Post-game stats
 ├── hooks/           # Logic
 │   └── useGameLogic.ts  # Core engine (State machine, Generative pitch logic)
@@ -85,5 +90,4 @@ The UI is built with a custom **Kids-First** design system using Tailwind CSS:
 *   **Icons**: SVG Icons (Lucide/Heroicons style)
 
 ---
-*Next Play Games - 2026*
-"# Strike_or_Ball_UI" 
+*Next Play Games - 2026* 
