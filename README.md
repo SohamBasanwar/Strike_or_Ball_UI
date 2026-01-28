@@ -90,4 +90,4 @@ The UI is built with a custom **Kids-First** design system using Tailwind CSS:
 *   **Icons**: SVG Icons (Lucide/Heroicons style)
 
 ---
-*Next Play Games - 2026* 
+*Soham Basanwar - 2026* 
